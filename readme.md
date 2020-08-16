@@ -1,4 +1,4 @@
-https://github.com/narniec/NEAR-CIDI/workflows/near/badge.svg
+https://github.com/narniec/NEAR-CIDI/tree/master/.github/workflows/near/badge.svg
 
 
 Test
