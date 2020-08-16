@@ -1,0 +1,23 @@
+name: NEAR-CIDI
+
+on:
+  schedule:
+    - cron: '*/60 * * * *'
+env: 
+    DOCKER_BUILDKIT: 1 
+jobs:
+  build: #сборка
+    runs-on: ubuntu-latest #версия линукс
+    strategy:
+      fail-fast: false
+      matrix:
+        release-name: ["rc", "beta"] #для бета и тест
+    steps: #шаги
+      - uses: actions/checkout@v2 #клонирование
+      - name: Github-Tag
+        env: 
+          RELEASE_NAME: ${{ matrix.release-name }}
+        run: |
+          echo $(curl -s https://api.github.com/repos/nearprotocol/nearcore/releases | jq -c -r --arg RELEASE_NAME "$RELEASE_NAME" 'map(select(.tag_name | contains($RELEASE_NAME)))[0].tag_name') > github-tag.txt #shell
+          
+    
