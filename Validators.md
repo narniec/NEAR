@@ -1,10 +1,14 @@
 
 ---Validation process and some additional resources.---
+
 https://docs.near.org/docs/roles/validator/hardware
+
 #----------Validator Requirements------------
 1. Min Hardware Requirements
+
 CPU: 2-Core, RAM: 8GB DDR4, Storage: 100GB SSD (Note: HDD will not work), Linux 18.04 or 20.04
 2. Choose VPS and price)
+
 GCP,AWS,Azure, Vultr, Hetzner, Oracle
 
 #-----------Soliving some problems and useful informataion -----------
