@@ -1,13 +1,13 @@
----Validation process and some additional resources.---
+```---Validation process and some additional resources.---
 https://docs.near.org/docs/roles/validator/hardware
 
-----------Validator Requirements------------
+#----------Validator Requirements------------
 1. Min Hardware Requirements
 CPU: 2-Core, RAM: 8GB DDR4, Storage: 100GB SSD (Note: HDD will not work), Linux 18.04 or 20.04
 2. Choose VPS and price)
 GCP,AWS,Azure, Vultr, Hetzner, Oracle
 
------------Soliving some problems and useful informataion -----------
+#-----------Soliving some problems and useful informataion -----------
 3. This document will address the most common issues you may have while running Stake Wars and setting up your node.
 https://github.com/nearprotocol/stakewars/blob/master/troubleshooting.md
 4. Check current seat price - proposals, next epoch and current
